@@ -1,0 +1,21 @@
+@import '../../../mixins/utils.scss';
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-rows: repeat(auto-fill, 350px);
+  padding: 60px;
+  height: 100%;
+  overflow: hidden;
+
+  @include laptop {
+    padding: 40px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: repeat(auto-fill, 340px);
+  }
+
+  @include tablets {
+    padding: 20px;
+    justify-content: center;
+  }
+}

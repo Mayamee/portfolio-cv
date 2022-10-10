@@ -1,0 +1,37 @@
+@import '../mixins/utils.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 60px;
+  color: $secondary-text-color;
+  background-color: $secondary-background-color;
+
+  @include laptop {
+    padding: 40px;
+  }
+
+  @include tablets {
+    padding: 20px;
+  }
+}
+
+.text {
+  margin-left: 558px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include desktop {
+    margin-left: 458px;
+  }
+
+  @include laptop {
+    margin-left: 358px;
+  }
+
+  @media screen and (max-width: 865px) {
+    display: none;
+  }
+}

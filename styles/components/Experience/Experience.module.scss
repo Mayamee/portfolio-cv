@@ -1,0 +1,46 @@
+@import '../../mixins/utils.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  @include tablets {
+    top: -132px;
+  }
+}
+
+.nav {
+  display: flex;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
+
+  @include tablets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.projects,
+.work {
+  &:hover {
+    @include default-hover;
+  }
+
+  @include tablets {
+    margin-right: 0px;
+  }
+}
+
+.projects {
+  margin-right: 50px;
+
+  @include tablets {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../mixins/utils.scss';
+
+.container {
+  position: relative;
+  top: -192px;
+  z-index: 1;
+}
+
+.layout {
+  width: 498px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 2px 6px 31px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+
+  @include desktop {
+    width: 408px;
+  }
+
+  @include laptop {
+    width: 298px;
+  }
+
+  @include tablets {
+    width: 398px;
+  }
+
+  @include phones {
+    width: 338px;
+  }
+}

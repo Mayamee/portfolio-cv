@@ -1,0 +1,70 @@
+@import '../../mixins/utils.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 50px 50px 25px 50px;
+  background-color: $primary-background-color;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
+
+  @include laptop {
+    flex-direction: column;
+    padding: 20px 40px 40px 40px;
+  }
+
+  @include tablets {
+    flex-direction: row;
+  }
+
+  @include phones {
+    padding: 10px 20px 20px 20px;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.info {
+  margin-left: 30px;
+
+  @include laptop {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  @include tablets {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+.title {
+  @include page-title;
+}
+
+.subtitle {
+  @include title;
+  font-weight: 400;
+}
+
+.description {
+  @include paragraph;
+  margin-left: 10px;
+}
+
+.location,
+.availability {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.avaible {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #238d4d;
+}

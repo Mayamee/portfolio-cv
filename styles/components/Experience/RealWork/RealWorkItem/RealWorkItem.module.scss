@@ -1,0 +1,48 @@
+@import '../../../../mixins/utils.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 320px;
+  padding: 20px;
+  border: 1px solid rgba($color: gray, $alpha: 0.2);
+  border-radius: 5px;
+
+  @include tablets {
+    margin: 0 auto;
+  }
+}
+
+.container:hover {
+  @include default-hover;
+}
+
+.label {
+  @include title;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.date {
+  @include paragraph;
+  margin-left: 10px;
+}
+
+.tasks {
+  margin-top: 20px;
+  @include subtitle;
+}
+
+.task {
+  margin-top: 5px;
+  @include paragraph;
+}

@@ -1,0 +1,19 @@
+@import '../../../../mixins/utils.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 350px;
+  border: 1px solid rgba($color: gray, $alpha: 0.2);
+  border-radius: 5px;
+
+  @include tablets {
+    margin: 0 auto;
+  }
+}
+
+.container:hover {
+  @include default-hover;
+}

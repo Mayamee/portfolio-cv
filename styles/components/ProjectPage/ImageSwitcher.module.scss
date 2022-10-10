@@ -1,0 +1,15 @@
+@import '../../mixins/utils.scss';
+
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+
+  @include laptop {
+    margin-bottom: 20px;
+  }
+}

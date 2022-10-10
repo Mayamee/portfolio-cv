@@ -1,0 +1,38 @@
+[
+  {
+    "id": "notes-material-app",
+    "label": "Notes app",
+    "image": "/previewed/notes-app.png",
+    "isDeploy": true,
+    "blurImage": "/previewed/notes-app-blur.png",
+    "screenshots": [
+      "/screenshots/notes-app-1.png",
+      "/screenshots/notes-app-2.png",
+      "/screenshots/notes-app-3.png",
+      "/screenshots/notes-app-4.png"
+    ],
+    "stack": ["React", "TypeScript", "MaterialUI", "Axios", "JsonServer"],
+    "deployLink": "https://notes-inky.vercel.app/",
+    "responsibility": "Full app development",
+    "description": "Notes app",
+    "github": "https://github.com/Mayamee/MewMaterialUI"
+  },
+  {
+    "id": "quiz-app-frontend",
+    "label": "Quiz app",
+    "image": "/previewed/quiz-app.png",
+    "isDeploy": false,
+    "blurImage": "/previewed/quiz-app-blur.png",
+    "screenshots": [
+      "/screenshots/react-quiz-app-1.png",
+      "/screenshots/react-quiz-app-2.png",
+      "/screenshots/react-quiz-app-3.png",
+      "/screenshots/react-quiz-app-4.png"
+    ],
+    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Fullstack"],
+    "deployLink": "",
+    "responsibility": "Full stack app development",
+    "description": "Quiz app - application for creating and taking quizzes",
+    "github": "https://github.com/Mayamee/react-quiz"
+  }
+]

@@ -1,0 +1,13 @@
+@import '../../mixins/utils.scss';
+
+.container {
+  margin-bottom: 15px;
+
+  @include laptop {
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  margin-bottom: 5px;
+}

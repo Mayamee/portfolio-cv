@@ -1,0 +1,60 @@
+@import '../../mixins/utils.scss';
+
+.container {
+  padding: 25px 50px 25px 50px;
+  border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
+  background-color: $primary-background-color;
+
+  @include laptop {
+    padding: 20px 40px 20px 40px;
+  }
+
+  @include tablets {
+    padding: 15px 30px 15px 30px;
+  }
+
+  @include phones {
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+.buttons {
+  display: flex;
+}
+
+.hire,
+.works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 110px;
+  @include paragraph;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.hire:hover,
+.works:hover {
+  @include default-hover;
+}
+
+.hire {
+  margin-right: 25px;
+  color: $secondary-text-color;
+  background-color: $secondary-background-color;
+}
+
+.skills,
+.about {
+  margin-top: 30px;
+}
+
+.title {
+  @include title;
+  margin-bottom: 20px;
+}
+
+.text {
+  @include paragraph;
+}

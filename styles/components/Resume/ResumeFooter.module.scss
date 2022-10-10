@@ -1,0 +1,44 @@
+@import '../../mixins/utils.scss';
+
+.container {
+  padding: 25px 50px 50px 50px;
+
+  @include laptop {
+    padding: 20px 40px 40px 40px;
+  }
+
+  @include tablets {
+    padding: 15px 30px 30px 30px;
+  }
+
+  @include phones {
+    padding: 10px 20px 20px 20px;
+  }
+}
+
+.title {
+  @include title;
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -2px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.text {
+  @include paragraph;
+  margin-left: 10px;
+}
