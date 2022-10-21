@@ -24,12 +24,14 @@
     "isDeploy": false,
     "blurImage": "/previewed/quiz-app-blur.png",
     "screenshots": [
-      "/screenshots/react-quiz-app-1.png",
-      "/screenshots/react-quiz-app-2.png",
-      "/screenshots/react-quiz-app-3.png",
-      "/screenshots/react-quiz-app-4.png"
+      "/screenshots/quiz-01.png",
+      "/screenshots/quiz-02.png",
+      "/screenshots/quiz-03.png",
+      "/screenshots/quiz-04.png",
+			"/screenshots/quiz-05.png",
+			"/screenshots/quiz-06.png"
     ],
-    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Fullstack"],
+    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Fullstack", "Docker"],
     "deployLink": "",
     "responsibility": "Full stack app development",
     "description": "Quiz app - application for creating and taking quizzes",

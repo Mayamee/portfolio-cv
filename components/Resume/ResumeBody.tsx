@@ -6,15 +6,15 @@ export const ResumeBody = () => {
       <div className={styles.buttons}>
         <a
           className={styles.hire}
-          href="https://www.upwork.com/freelancers/~01522bc67a7df01a66"
+          href="https://rxresu.me/ponyashcat228/dmitryenglish"
           target="_blank"
           rel="noreferrer"
         >
-          Hire now
+          CV
         </a>
         <a
           className={styles.works}
-          href="https://www.upwork.com/freelancers/~01522bc67a7df01a66"
+          href="https://github.com/Mayamee/react-quiz"
           target="_blank"
           rel="noreferrer"
         >
@@ -24,20 +24,25 @@ export const ResumeBody = () => {
       <div className={styles.skills}>
         <h3 className={styles.title}>🎓My Skills</h3>
         <ul>
-          <li className={styles.text}>HTML, CSS, SCSS</li>
-          <li className={styles.text}>JavaScript, TypeScript</li>
-          <li className={styles.text}>React, Redux</li>
-          <li className={styles.text}>Node.js, Express</li>
-          <li className={styles.text}>MongoDB</li>
-          <li className={styles.text}>Webpack</li>
-          <li className={styles.text}>Git</li>
+          <li className={styles.text}>Nodejs (Express)</li>
+          <li className={styles.text}>Databases (PostgreSQL MongoDB)</li>
+          <li className={styles.text}>Monitoring systems (Zabbix)</li>
+          <li className={styles.text}>Command shells (Powershell/Bash/WSL)</li>
+          <li className={styles.text}>Networking (understanding TCP/IP, OSI, Firewalls)</li>
+          <li className={styles.text}>Containerization (Docker, Docker Compose)</li>
+          <li className={styles.text}>Frontend static (HTML/CSS)</li>
+          <li className={styles.text}>Frontend languages (Javascript/Typescript)</li>
+          <li className={styles.text}>JS Frameworks (React/Redux)</li>
+          <li className={styles.text}>Bundlers (Webpack/Gulp)</li>
+          <li className={styles.text}>Design (Figma/Photoshop/AdobeXD)</li>
         </ul>
       </div>
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>
         <p className={styles.text}>
-          I&apos;m an experienced Frontend developer who loves what he does. I Can redesign, build
-          websites, and fix bugs for you.
+          Hobby: Assembling puzzles, cycling, sports.<br/>Personal qualities: Responsibility, diligence,
+          innovation, purposefulness, ability to work in a team, ability to work under stress.<br/>
+          Interests: Reading fiction and professional literature. Watching movies. Journeys.
         </p>
       </div>
     </div>
