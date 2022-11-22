@@ -6,7 +6,7 @@ export const ResumeBody = () => {
       <div className={styles.buttons}>
         <a
           className={styles.hire}
-          href="https://rxresu.me/ponyashcat228/dmitryenglish"
+          href="https://rxresu.me/ponyashcat228/cv-frontend-eng"
           target="_blank"
           rel="noreferrer"
         >
@@ -40,8 +40,11 @@ export const ResumeBody = () => {
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>
         <p className={styles.text}>
-          Hobby: Assembling puzzles, cycling, sports.<br/>Personal qualities: Responsibility, diligence,
-          innovation, purposefulness, ability to work in a team, ability to work under stress.<br/>
+          Hobby: Assembling puzzles, cycling, sports.
+          <br />
+          Personal qualities: Responsibility, diligence, innovation, purposefulness, ability to work
+          in a team, ability to work under stress.
+          <br />
           Interests: Reading fiction and professional literature. Watching movies. Journeys.
         </p>
       </div>

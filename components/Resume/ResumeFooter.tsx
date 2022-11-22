@@ -20,7 +20,7 @@ export const ResumeFooter = () => {
         </a>
         <a
           className={styles.icon}
-          href="https://www.linkedin.com/in/dmitry-belykh-bb8a6b252"
+          href="https://www.linkedin.com/in/dmitry-belykh"
           target="_blank"
           rel="noreferrer"
         >

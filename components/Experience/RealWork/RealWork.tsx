@@ -25,9 +25,10 @@ export const RealWork = () => {
         image="/companies/astral.png"
         cutImage={false}
         workTasks={[
-          'Zabbix - configure and setup',
-          'VMWare - make new virtual machines',
-          'Rusiem - maintain and configure',
+          'maintenance of software products (Zabbix, RuSIEM)',
+          'using version control systems (Github, GitLab, Git)',
+          'using containerization systems (Docker, Docker-Compose)',
+          'fixing bugs and maintenance of the project code base',
         ]}
       />
     </motion.section>
