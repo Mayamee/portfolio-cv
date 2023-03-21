@@ -26,9 +26,9 @@ export const RealWork = () => {
         cutImage={false}
         workTasks={[
           'maintenance of software products (Zabbix, RuSIEM)',
-          'using version control systems (Github, GitLab, Git)',
+          'successful implementation of Ansible to automate the configuration of environments',
+          'working with the network (Vipnet Coordinator, Pfsense)',
           'using containerization systems (Docker, Docker-Compose)',
-          'fixing bugs and maintenance of the project code base',
         ]}
       />
     </motion.section>

@@ -6,7 +6,7 @@ export const ResumeFooter = () => {
     <div className={styles.container}>
       <h3 className={styles.title}>📱Contact me</h3>
       <div className={styles.email}>
-        <Image width={18} height={18} src="/icons/email.svg" alt="email" />
+        <Image width={30} height={30} src="/icons/email.svg" alt="email" />
         <p className={styles.text}>ponyashcat228@gmail.com</p>
       </div>
       <div className={styles.links}>
@@ -16,7 +16,7 @@ export const ResumeFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image width={20} height={20} src="/icons/github.svg" alt="github" />
+          <Image width={30} height={30} src="/icons/github.svg" alt="github" />
         </a>
         <a
           className={styles.icon}
@@ -24,7 +24,10 @@ export const ResumeFooter = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <Image width={20} height={20} src="/icons/linkedin.svg" alt="linkedin" />
+          <Image width={30} height={30} src="/icons/linkedin.svg" alt="linkedin" />
+        </a>
+        <a className={styles.icon} href="https://t.me/ymmwmm" target="_blank" rel="noreferrer">
+          <Image width={30} height={30} src="/icons/telegram.svg" alt="linkedin" />
         </a>
       </div>
     </div>

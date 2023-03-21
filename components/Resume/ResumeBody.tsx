@@ -24,27 +24,27 @@ export const ResumeBody = () => {
       <div className={styles.skills}>
         <h3 className={styles.title}>🎓My Skills</h3>
         <ul>
-          <li className={styles.text}>Nodejs (Express)</li>
-          <li className={styles.text}>Databases (PostgreSQL MongoDB)</li>
-          <li className={styles.text}>Monitoring systems (Zabbix)</li>
-          <li className={styles.text}>Command shells (Powershell/Bash/WSL)</li>
-          <li className={styles.text}>Networking (understanding TCP/IP, OSI, Firewalls)</li>
-          <li className={styles.text}>Containerization (Docker, Docker Compose)</li>
-          <li className={styles.text}>Frontend static (HTML/CSS)</li>
-          <li className={styles.text}>Frontend languages (Javascript/Typescript)</li>
-          <li className={styles.text}>JS Frameworks (React/Redux)</li>
-          <li className={styles.text}>Bundlers (Webpack/Gulp)</li>
-          <li className={styles.text}>Design (Figma/Photoshop/AdobeXD)</li>
+          <li className={styles.text}>React Redux</li>
+          <li className={styles.text}>JS/TS</li>
+          <li className={styles.text}>Figma/AdobeXD/Avocode</li>
+          <li className={styles.text}>Webpack/Vite/Gulp</li>
+          <li className={styles.text}>Nodejs</li>
+          <li className={styles.text}>Docker</li>
+          <li className={styles.text}>Gitlab CI</li>
+          <li className={styles.text}>Databases (MongoDB)</li>
+          <li className={styles.text}>Powershell/Bash scripting</li>
+          <li className={styles.text}>TCP/IP, OSI</li>
         </ul>
       </div>
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>
+        <p className={styles.text}>I am interested in frontend development.</p>
+        <br />
         <p className={styles.text}>
-          Hobby: Assembling puzzles, cycling, sports.
-          <br />
-          Personal qualities: Responsibility, diligence, innovation, purposefulness, ability to work
-          in a team, ability to work under stress.
-          <br />
+          I am known for my quick learning, responsibility, and communication skills.
+        </p>
+        <br />
+        <p className={styles.text}>
           Interests: Reading fiction and professional literature. Watching movies. Journeys.
         </p>
       </div>
