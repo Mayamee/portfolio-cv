@@ -24,7 +24,8 @@ export const ResumeBody = () => {
       <div className={styles.skills}>
         <h3 className={styles.title}>🎓My Skills</h3>
         <ul>
-          <li className={styles.text}>React Redux</li>
+          <li className={styles.text}>React</li>
+          <li className={styles.text}>Redux</li>
           <li className={styles.text}>JS/TS</li>
           <li className={styles.text}>Figma/AdobeXD/Avocode</li>
           <li className={styles.text}>Webpack/Vite/Gulp</li>
