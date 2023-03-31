@@ -41,10 +41,6 @@ export const ResumeBody = () => {
         <p className={styles.text}>I am interested in frontend development.</p>
         <br />
         <p className={styles.text}>
-          I am known for my quick learning, responsibility, and communication skills.
-        </p>
-        <br />
-        <p className={styles.text}>
           Interests: Reading fiction and professional literature. Watching movies. Journeys.
         </p>
       </div>
