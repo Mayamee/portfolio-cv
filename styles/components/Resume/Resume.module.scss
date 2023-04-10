@@ -1,8 +1,7 @@
 @import '../../mixins/utils.scss';
 
 .container {
-  position: relative;
-  top: -192px;
+  margin-top: -192px;
   z-index: 1;
 }
 
