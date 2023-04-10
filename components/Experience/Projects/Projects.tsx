@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { ProjectsItem } from './ProjectsItem/ProjectsItem'
 import styles from '../../../styles/components/Experience/Projects/Projects.module.scss'
-import projects from '../../../projects.json'
+import projects from '../../../localdb/projects.json'
 
 export const Projects: React.FC = () => {
   const variants = {

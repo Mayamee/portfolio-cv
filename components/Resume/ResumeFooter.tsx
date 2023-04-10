@@ -1,34 +1,46 @@
 import styles from '../../styles/components/Resume/ResumeFooter.module.scss'
+import author from '../../localdb/author.json'
 import Image from 'next/image'
 
 export const ResumeFooter = () => {
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>📱Contact me</h3>
-      <div className={styles.email}>
-        <Image width={30} height={30} src="/icons/email.svg" alt="email" />
-        <p className={styles.text}>ponyashcat228@gmail.com</p>
-      </div>
+      <h3 className={styles.title}>📱My contacts</h3>
+
+      {author.contacts.phone && (
+        <div
+          className={styles.email}
+          style={{
+            marginBottom: '0.5rem',
+          }}
+        >
+          <Image width={30} height={30} src={author.contacts.phone.img} alt="email" />
+          <a href={`tel: ${author.contacts.phone.value}`} className={styles.text}>
+            +{author.contacts.phone.value}
+          </a>
+        </div>
+      )}
+      {author.contacts.email && (
+        <div className={styles.email}>
+          <Image width={30} height={30} src={author.contacts.email.img} alt="email" />
+          <a href={`mailto: ${author.contacts.email.value}`} className={styles.text}>
+            {author.contacts.email.value}
+          </a>
+        </div>
+      )}
+
       <div className={styles.links}>
-        <a
-          className={styles.icon}
-          href="https://github.com/Mayamee"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image width={30} height={30} src="/icons/github.svg" alt="github" />
-        </a>
-        <a
-          className={styles.icon}
-          href="https://www.linkedin.com/in/dmitry-belykh"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image width={30} height={30} src="/icons/linkedin.svg" alt="linkedin" />
-        </a>
-        <a className={styles.icon} href="https://t.me/ymmwmm" target="_blank" rel="noreferrer">
-          <Image width={30} height={30} src="/icons/telegram.svg" alt="linkedin" />
-        </a>
+        {author.contacts.links.map((link) => (
+          <a
+            key={link.id}
+            className={styles.icon}
+            href={link.value}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image width={30} height={30} src={link.img} alt={link.alt} />
+          </a>
+        ))}
       </div>
     </div>
   )

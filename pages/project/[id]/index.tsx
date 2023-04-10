@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { ImageSwitcher } from '../../../components/ProjectPage/ImageSwitcher'
 import { ProjectPageLayout } from '../../../components/ProjectPageLayout'
 import styles from '../../../styles/components/ProjectPage/ProjectPage.module.scss'
-import projects from '../../../projects.json'
+import projects from '../../../localdb/projects.json'
 import { Info } from '../../../components/ProjectPage/Info'
 
 interface TypeProject {

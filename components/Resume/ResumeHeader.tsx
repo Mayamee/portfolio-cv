@@ -1,5 +1,6 @@
 import styles from '../../styles/components/Resume/ResumeHeader.module.scss'
 import Image from 'next/image'
+import author from '../../localdb/author.json'
 
 export const ResumeHeader = () => {
   return (
@@ -15,15 +16,17 @@ export const ResumeHeader = () => {
         alt="avatar"
       />
       <div className={styles.info}>
-        <h2 className={styles.title}>Dmitry Belykh</h2>
-        <h3 className={styles.subtitle}>Frontend developer</h3>
+        <h2 className={styles.title}>{author.name}</h2>
+        <h3 className={styles.subtitle}>{author.jobType}</h3>
         <div className={styles.location}>
           <Image width={15} height={15} src="/icons/location.svg" alt="location" />
-          <h4 className={styles.description}>Kaluga</h4>
+          <h4 className={styles.description}>{author.city}</h4>
         </div>
         <div className={styles.availability}>
-          <span className={styles.avaible}></span>
-          <h4 className={styles.description}>Open to work</h4>
+          <span className={author.isLookingForAJob ? styles.avaible : styles.busy} />
+          <h4 className={styles.description}>
+            {author.isLookingForAJob ? 'Open to work' : 'Hired'}
+          </h4>
         </div>
       </div>
     </header>

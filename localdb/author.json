@@ -1,0 +1,68 @@
+{
+  "name": "Dmitry Belykh",
+  "surname": "Belykh",
+  "jobType": "Frontend developer",
+  "city": "Kaluga",
+  "isLookingForAJob": true,
+  "skills": [
+    "HTML",
+    "React",
+    "CSS/SCSS",
+		"Redux",
+		"Linux",
+    "Material UI",
+		"DrawIO",
+		"Bootstrap",
+    "Javascript (ES6+)",
+    "Typescript",
+		"Postman",
+		"Jest",
+    "Figma",
+    "Webpack/Gulp/Vite",
+    "Nodejs",
+    "Docker",
+    "Gitlab CI",
+    "MongoDB"
+  ],
+  "about": [
+    "I have experience in developing SPA applications on React, also worked a lot with Redux and Redux Toolkit.",
+    "I can use both native CSS and preprocessors like SCSS in my work.",
+    "I know how to configure Vite Gulp Webpack configurations. There are skills of working with git in a team.",
+    "I also work with Typescript.",
+    "I have experience setting up CI/CD in Gitlab CI.",
+    "I have experience working with Material UI and Bootstrap."
+  ],
+  "contacts": {
+    "email": {
+      "value": "ponyashcat228@gmail.com",
+      "img": "/icons/email.svg"
+    },
+    "phone": {
+      "value": "79533248256",
+      "img": "/icons/phone.svg"
+    },
+    "links": [
+      {
+        "id": "01",
+        "type": "telegram",
+        "value": "https://t.me/ymmwmm",
+        "img": "/icons/telegram.svg",
+        "alt": "telegram"
+      },
+      {
+        "id": "02",
+        "type": "github",
+        "value": "https://github.com/Mayamee",
+        "img": "/icons/github.svg",
+        "alt": "github"
+      },
+      {
+        "id": "03",
+        "type": "linkedin",
+        "value": "https://www.linkedin.com/in/dmitry-belykh",
+        "img": "/icons/linkedin.svg",
+        "alt": "linkedin"
+      }
+    ]
+  }
+}
