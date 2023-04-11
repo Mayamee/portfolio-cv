@@ -31,7 +31,7 @@
 }
 
 .container:hover {
-  @include default-hover;
+  @include shadow-hover;
 }
 
 .label {

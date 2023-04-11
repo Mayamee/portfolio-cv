@@ -1,0 +1,23 @@
+@import '../../../mixins/utils.scss';
+
+.stack {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 10px;
+  list-style: none;
+  li {
+    &:nth-child(even) {
+      background-color: #398255;
+    }
+    background-color: #272e40;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    @include paragraph;
+    &:hover {
+      @include swell-hover;
+    }
+  }
+}

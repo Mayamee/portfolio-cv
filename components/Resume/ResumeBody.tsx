@@ -1,5 +1,6 @@
 import styles from '../../styles/components/Resume/ResumeBody.module.scss'
 import author from '../../localdb/author.json'
+import Stack from '../Common/Stack/Stack'
 
 export const ResumeBody = () => {
   return (
@@ -24,13 +25,7 @@ export const ResumeBody = () => {
       </div>
       <div className={styles.skills}>
         <h3 className={styles.title}>🎓My Skills</h3>
-        <ul>
-          {author.skills.map((skill) => (
-            <li key={skill} className={styles.text}>
-              {skill}
-            </li>
-          ))}
-        </ul>
+        <Stack items={author.skills} />
       </div>
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️About me</h3>

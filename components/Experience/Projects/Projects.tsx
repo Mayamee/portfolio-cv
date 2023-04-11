@@ -26,6 +26,7 @@ export const Projects: React.FC = () => {
           label={item.label}
           image={item.image}
           blurImage={item.blurImage}
+          stack={item.stack}
           id={item.id}
           key={item.id}
         />

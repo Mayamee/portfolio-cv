@@ -30,8 +30,7 @@
   @include laptop {
     margin-left: 358px;
   }
-
-  @media screen and (max-width: 865px) {
+  @include tablets {
     display: none;
   }
 }

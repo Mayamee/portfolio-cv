@@ -36,7 +36,7 @@
 
 .hire:hover,
 .works:hover {
-  @include default-hover;
+  @include shadow-hover;
 }
 
 .hire {
@@ -48,37 +48,6 @@
 .skills,
 .about {
   margin-top: 30px;
-}
-
-.skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    margin: 0 10px 10px 0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    @include paragraph;
-  }
-}
-.skills {
-  .text {
-    &:nth-child(even) {
-      background-color: #398255;
-    }
-    cursor: pointer;
-    color: #fff;
-    background-color: #272e40;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      color: #000;
-      background-color: #fff;
-      outline: 1px solid #272e40;
-      transform: scale(1.05);
-    }
-  }
 }
 
 .title {

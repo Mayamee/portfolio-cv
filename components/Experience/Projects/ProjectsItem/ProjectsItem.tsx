@@ -1,6 +1,7 @@
 import styles from '../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Stack from '../../../Common/Stack/Stack'
 
 interface ProjectsItemProps {
   width: number
@@ -9,6 +10,7 @@ interface ProjectsItemProps {
   blurImage: string
   label: string
   id: string
+  stack: string[]
 }
 
 export const ProjectsItem: React.FC<ProjectsItemProps> = ({
@@ -18,35 +20,36 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
   blurImage,
   label,
   id,
+  stack,
 }) => {
-  const sizes = {
-    width: `${width}px`,
-    height: `${height}px`,
-  }
-
   const router = useRouter()
 
   return (
     <div
       className={styles.container}
-      style={sizes}
       onClick={() => {
         router.push('/project/' + id)
       }}
     >
-      <figure>
-        <Image
-          src={image}
-          width={width}
-          height={height}
-          placeholder="blur"
-          blurDataURL={blurImage}
-          quality={70}
-          objectFit="cover"
-          alt={label}
-        />
-        <figcaption className={styles.caption}>{label}</figcaption>
-      </figure>
+      <div className={styles.spacer}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={image}
+            width={width}
+            height={height}
+            placeholder="blur"
+            blurDataURL={blurImage}
+            quality={70}
+            objectFit="cover"
+            alt={label}
+          />
+        </div>
+        <h3 className={styles.label}>{label}</h3>
+      </div>
+      <div className={styles.divider} />
+      <div className={styles.spacer}>
+        <Stack items={stack} />
+      </div>
     </div>
   )
 }

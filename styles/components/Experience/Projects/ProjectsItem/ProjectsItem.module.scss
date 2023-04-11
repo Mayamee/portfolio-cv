@@ -1,19 +1,49 @@
 @import '../../../../mixins/utils.scss';
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 350px;
-  border: 1px solid rgba($color: gray, $alpha: 0.2);
+  border: 1px solid #1d1d1d40;
   border-radius: 5px;
-
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
   @include tablets {
     margin: 0 auto;
   }
 }
 
+.spacer {
+  padding: 0 20px;
+}
+
+.divider {
+  height: 1px;
+  margin: 10px 0;
+  background-color: #1d1d1d40;
+}
+.label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+ul.stack {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  li {
+    background-color: #272e40;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
 .container:hover {
-  @include default-hover;
+  @include shadow-hover;
 }
