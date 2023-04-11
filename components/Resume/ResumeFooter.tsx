@@ -15,7 +15,7 @@ export const ResumeFooter = () => {
           }}
         >
           <Image width={30} height={30} src={author.contacts.phone.img} alt="email" />
-          <a href={`tel: ${author.contacts.phone.value}`} className={styles.text}>
+          <a href={`tel:${author.contacts.phone.value}`} className={styles.text}>
             +{author.contacts.phone.value}
           </a>
         </div>
@@ -23,7 +23,7 @@ export const ResumeFooter = () => {
       {author.contacts.email && (
         <div className={styles.email}>
           <Image width={30} height={30} src={author.contacts.email.img} alt="email" />
-          <a href={`mailto: ${author.contacts.email.value}`} className={styles.text}>
+          <a href={`mailto:${author.contacts.email.value}`} className={styles.text}>
             {author.contacts.email.value}
           </a>
         </div>
