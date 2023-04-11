@@ -1,6 +1,11 @@
+import { FC, PropsWithChildren } from 'react'
 import styles from '../../../styles/components/Common/Stack/Stack.module.scss'
 
-const Stack = ({ items }) => {
+interface IStackProps {
+  items: string[]
+}
+
+const Stack: FC<PropsWithChildren<IStackProps>> = ({ items }) => {
   if (items.length === 0) return null
   return (
     <ul className={styles.stack}>

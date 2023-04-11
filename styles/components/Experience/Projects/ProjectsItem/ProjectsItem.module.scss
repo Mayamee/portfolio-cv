@@ -8,6 +8,7 @@
   padding-bottom: 10px;
   @include tablets {
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -27,21 +28,6 @@
 
 .imageContainer {
   text-align: center;
-}
-
-ul.stack {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  li {
-    background-color: #272e40;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
 }
 
 .container:hover {
