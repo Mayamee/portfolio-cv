@@ -12,7 +12,7 @@
       "/screenshots/notes-app-4.png"
     ],
     "stack": ["React", "TypeScript", "MaterialUI", "Axios", "JsonServer"],
-    "deployLink": "https://notes-inky.vercel.app/",
+    "deployLink": "https://notes.wem.webtm.ru/",
     "responsibility": "Full app development",
     "description": "Notes app",
     "github": "https://github.com/Mayamee/MewMaterialUI"
