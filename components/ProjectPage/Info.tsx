@@ -44,7 +44,7 @@ export const Info: FC<InfoProps> = ({
       {isDeploy && (
         <LinkSection
           title="Click to check it on your device:"
-          linkTitle="Deploy"
+          linkTitle="View deployment"
           link={deployLink}
           delay={0.7}
         />

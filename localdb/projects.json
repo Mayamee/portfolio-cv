@@ -1,5 +1,55 @@
 [
   {
+    "id": "flappy-chat",
+    "label": "Flappy chat",
+    "image": "/previewed/flappy-preview.png",
+    "isDeploy": true,
+    "blurImage": "/previewed/flappy-preview-blur.png",
+    "screenshots": [
+      "/screenshots/flappy-0.png",
+      "/screenshots/flappy-1.png",
+      "/screenshots/flappy-2.png",
+      "/screenshots/flappy-3.png",
+      "/screenshots/flappy-4.png",
+      "/screenshots/flappy-5.png"
+    ],
+    "stack": [
+      "React",
+      "Redux/Toolkit",
+      "SocketIO",
+      "Bootstrap",
+      "i18next",
+      "Formik",
+      "JWT",
+      "Fastify",
+      "Docker"
+    ],
+    "deployLink": "https://cv-chat.wem.webtm.ru",
+    "responsibility": "Frontend application development",
+    "description": "Flappy chat - chat application with rooms and private messages",
+    "github": "https://github.com/Mayamee/FlappyChat"
+  },
+  {
+    "id": "quiz-app-frontend",
+    "label": "Quiz app",
+    "image": "/previewed/quiz-app.png",
+    "isDeploy": false,
+    "blurImage": "/previewed/quiz-app-blur.png",
+    "screenshots": [
+      "/screenshots/quiz-01.png",
+      "/screenshots/quiz-02.png",
+      "/screenshots/quiz-03.png",
+      "/screenshots/quiz-04.png",
+      "/screenshots/quiz-05.png",
+      "/screenshots/quiz-06.png"
+    ],
+    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Docker"],
+    "deployLink": "",
+    "responsibility": "Full stack app development",
+    "description": "Quiz app - application for creating and taking quizzes",
+    "github": "https://github.com/Mayamee/react-quiz"
+  },
+  {
     "id": "notes-material-app",
     "label": "Notes app",
     "image": "/previewed/notes-app.png",
@@ -16,25 +66,5 @@
     "responsibility": "Full app development",
     "description": "Notes app",
     "github": "https://github.com/Mayamee/Notes"
-  },
-  {
-    "id": "quiz-app-frontend",
-    "label": "Quiz app",
-    "image": "/previewed/quiz-app.png",
-    "isDeploy": false,
-    "blurImage": "/previewed/quiz-app-blur.png",
-    "screenshots": [
-      "/screenshots/quiz-01.png",
-      "/screenshots/quiz-02.png",
-      "/screenshots/quiz-03.png",
-      "/screenshots/quiz-04.png",
-			"/screenshots/quiz-05.png",
-			"/screenshots/quiz-06.png"
-    ],
-    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Fullstack", "Docker"],
-    "deployLink": "",
-    "responsibility": "Full stack app development",
-    "description": "Quiz app - application for creating and taking quizzes",
-    "github": "https://github.com/Mayamee/react-quiz"
   }
 ]
