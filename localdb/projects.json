@@ -63,7 +63,7 @@
     ],
     "stack": ["React", "TypeScript", "MaterialUI", "Axios", "JsonServer"],
     "deployLink": "https://notes.wem.webtm.ru/",
-    "responsibility": "Full app development",
+    "responsibility": "Frontend application development",
     "description": "Notes app",
     "github": "https://github.com/Mayamee/Notes"
   }
