@@ -16,7 +16,7 @@ export const ResumeBody = () => {
         </a>
         <a
           className={styles.works}
-          href="https://github.com/Mayamee/react-quiz"
+          href="https://portfolio-cv-eight.vercel.app/project/flappy-chat"
           target="_blank"
           rel="noreferrer"
         >
