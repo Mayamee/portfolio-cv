@@ -6,12 +6,13 @@
     "isDeploy": true,
     "blurImage": "/previewed/flappy-preview-blur.png",
     "screenshots": [
-      "/screenshots/flappy-0.png",
-      "/screenshots/flappy-1.png",
-      "/screenshots/flappy-2.png",
-      "/screenshots/flappy-3.png",
-      "/screenshots/flappy-4.png",
-      "/screenshots/flappy-5.png"
+      "/screenshots/flappy-01.png",
+      "/screenshots/flappy-02.png",
+      "/screenshots/flappy-03.png",
+      "/screenshots/flappy-04.png",
+      "/screenshots/flappy-05.png",
+      "/screenshots/flappy-06.png",
+      "/screenshots/flappy-07.png"
     ],
     "stack": [
       "React",
