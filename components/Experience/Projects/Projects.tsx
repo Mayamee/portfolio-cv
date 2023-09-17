@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { ProjectsItem } from './ProjectsItem/ProjectsItem'
-import styles from '../../../styles/components/Experience/Projects/Projects.module.scss'
-import projects from '../../../localdb/projects.json'
+import styles from '@/styles/components/Experience/Projects/Projects.module.scss'
+import { ConfigService } from '@/services/ConfigService'
 
 export const Projects: React.FC = () => {
+  const { projectsData } = ConfigService.config
+
   const variants = {
     hidden: { opacity: 0, x: 200, y: 0 },
     enter: { opacity: 1, x: 0, y: 0 },
@@ -19,7 +21,7 @@ export const Projects: React.FC = () => {
       transition={{ type: 'linear' }}
       className={styles.projects}
     >
-      {projects.map((item) => (
+      {projectsData.map((item) => (
         <ProjectsItem
           width={350}
           height={300}

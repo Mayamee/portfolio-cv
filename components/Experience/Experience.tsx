@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import styles from '../../styles/components/Experience/Experience.module.scss'
+import styles from '@/styles/components/Experience/Experience.module.scss'
 import { Projects } from './Projects/Projects'
 import { RealWork } from './RealWork/RealWork'
 

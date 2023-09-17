@@ -1,6 +1,6 @@
 import { ImageSwitcherSlide } from './ImageSwitcherSlide'
 import { Carousel } from 'react-responsive-carousel'
-import styles from '../../styles/components/ProjectPage/ImageSwitcher.module.scss'
+import styles from '@/styles/components/ProjectPage/ImageSwitcher.module.scss'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { motion } from 'framer-motion'
 import { FC } from 'react'

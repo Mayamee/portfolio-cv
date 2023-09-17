@@ -1,4 +1,4 @@
-import styles from '../../../../styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
+import styles from '@/styles/components/Experience/Projects/ProjectsItem/ProjectsItem.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Stack from '../../../Common/Stack/Stack'

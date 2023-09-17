@@ -1,36 +1,38 @@
-import styles from '../../styles/components/Resume/ResumeFooter.module.scss'
-import author from '../../localdb/author.json'
+import { ConfigService } from '@/services/ConfigService'
+import styles from '@/styles/components/Resume/ResumeFooter.module.scss'
 import Image from 'next/image'
 
 export const ResumeFooter = () => {
+  const { authorData } = ConfigService.config
+
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>📱My contacts</h3>
+      <h3 className={styles.title}>📱 Contacts</h3>
 
-      {author.contacts.phone && (
+      {authorData.contacts.phone && (
         <div
           className={styles.email}
           style={{
             marginBottom: '0.5rem',
           }}
         >
-          <Image width={30} height={30} src={author.contacts.phone.img} alt="email" />
-          <a href={`tel:${author.contacts.phone.value}`} className={styles.text}>
-            +{author.contacts.phone.value}
+          <Image width={30} height={30} src={authorData.contacts.phone.img} alt="email" />
+          <a href={`tel:${authorData.contacts.phone.value}`} className={styles.text}>
+            +{authorData.contacts.phone.value}
           </a>
         </div>
       )}
-      {author.contacts.email && (
+      {authorData.contacts.email && (
         <div className={styles.email}>
-          <Image width={30} height={30} src={author.contacts.email.img} alt="email" />
-          <a href={`mailto:${author.contacts.email.value}`} className={styles.text}>
-            {author.contacts.email.value}
+          <Image width={30} height={30} src={authorData.contacts.email.img} alt="email" />
+          <a href={`mailto:${authorData.contacts.email.value}`} className={styles.text}>
+            {authorData.contacts.email.value}
           </a>
         </div>
       )}
 
       <div className={styles.links}>
-        {author.contacts.links.map((link) => (
+        {authorData.contacts.links.map((link) => (
           <a
             key={link.id}
             className={styles.icon}
