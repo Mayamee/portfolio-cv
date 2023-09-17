@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Head from 'next/head'
 import React, { FC } from 'react'
 import styles from '@/styles/components/ProjectPageLayout.module.scss'
 
@@ -12,9 +11,6 @@ export const ProjectPageLayout: FC<any> = ({ children, label }) => {
 
   return (
     <>
-      <Head>
-        <title>{label}</title>
-      </Head>
       <header className={styles.header}>
         <motion.h1
           variants={variants}

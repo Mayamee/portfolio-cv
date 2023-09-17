@@ -4,6 +4,7 @@ import { ImageSwitcher } from '@/components/ProjectPage/ImageSwitcher'
 import { ProjectPageLayout } from '@/components/ProjectPageLayout'
 import { Info } from '@/components/ProjectPage/Info'
 import { ConfigService } from '@/services/ConfigService'
+import Head from 'next/head'
 
 interface TypeProject {
   id: string
@@ -49,17 +50,22 @@ const ProjectPage = () => {
   } = project
 
   return (
-    <ProjectPageLayout label={label}>
-      <ImageSwitcher imagesPath={screenshots} blurImage={blurImage} />
-      <Info
-        responsibility={responsibility}
-        description={description}
-        stack={stack}
-        deployLink={deployLink}
-        github={github}
-        isDeploy={isDeploy}
-      />
-    </ProjectPageLayout>
+    <>
+      <Head>
+        <title>Belykh DN | {label}</title>
+      </Head>
+      <ProjectPageLayout label={label}>
+        <ImageSwitcher imagesPath={screenshots} blurImage={blurImage} />
+        <Info
+          responsibility={responsibility}
+          description={description}
+          stack={stack}
+          deployLink={deployLink}
+          github={github}
+          isDeploy={isDeploy}
+        />
+      </ProjectPageLayout>
+    </>
   )
 }
 

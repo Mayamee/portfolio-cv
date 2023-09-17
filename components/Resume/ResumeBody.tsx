@@ -26,11 +26,11 @@ export const ResumeBody = () => {
         </a>
       </div>
       <div className={styles.skills}>
-        <h3 className={styles.title}>🎓My Skills</h3>
+        <h3 className={styles.title}>🎓 Core Skills</h3>
         <Stack items={authorData.skills} />
       </div>
       <div className={styles.about}>
-        <h3 className={styles.title}>💁‍♂️About me</h3>
+        <h3 className={styles.title}>💁‍♂️ About me</h3>
         <article className={styles.text}>
           {authorData.about.map((sentence) => (
             <p key={sentence}>{sentence}</p>

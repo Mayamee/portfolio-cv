@@ -7,7 +7,7 @@ export const ResumeFooter = () => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>📱My contacts</h3>
+      <h3 className={styles.title}>📱 Contacts</h3>
 
       {authorData.contacts.phone && (
         <div

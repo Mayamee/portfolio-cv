@@ -1,0 +1,21 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "companyType": "IT-company",
+      "label": "Astral Soft",
+      "date": "June 2021 - Present",
+      "image": "/companies/astral.png",
+      "cutImage": false,
+      "workTasks": [
+        "Product development of a large electronic reporting project",
+        "Code base support based on the Nextjs framework",
+        "Development of new modules and components",
+        "Code refactoring",
+        "Development of tests",
+        "Development of documentation",
+        "Actively participated in the migration to the new architecture (Module)"
+      ]
+    }
+  ]
+}
