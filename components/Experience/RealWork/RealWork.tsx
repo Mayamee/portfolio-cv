@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import styles from '../../../styles/components/Experience/RealWork/RealWork.module.scss'
+import styles from '@/styles/components/Experience/RealWork/RealWork.module.scss'
 import { RealWorkItem } from './RealWorkItem/RealWorkItem'
 
 export const RealWork = () => {
@@ -20,7 +20,7 @@ export const RealWork = () => {
     >
       <RealWorkItem
         companyType="IT-company"
-        label="Astral"
+        label="Kaluga Astral"
         date="June 2021 - Present"
         image="/companies/astral.png"
         cutImage={false}

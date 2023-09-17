@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { FC } from 'react'
-import styles from '../../styles/components/ProjectPage/ImageSwitcherSlide.module.scss'
+import styles from '@/styles/components/ProjectPage/ImageSwitcherSlide.module.scss'
 
 interface ImageSwitcherSlideProps {
   imagePath: string

@@ -1,10 +1,9 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { ImageSwitcher } from '../../../components/ProjectPage/ImageSwitcher'
-import { ProjectPageLayout } from '../../../components/ProjectPageLayout'
-import styles from '../../../styles/components/ProjectPage/ProjectPage.module.scss'
-import projects from '../../../localdb/projects.json'
-import { Info } from '../../../components/ProjectPage/Info'
+import { ImageSwitcher } from '@/components/ProjectPage/ImageSwitcher'
+import { ProjectPageLayout } from '@/components/ProjectPageLayout'
+import { Info } from '@/components/ProjectPage/Info'
+import { ConfigService } from '@/services/ConfigService'
 
 interface TypeProject {
   id: string
@@ -21,6 +20,8 @@ interface TypeProject {
 }
 
 const ProjectPage = () => {
+  const { projectsData } = ConfigService.config
+
   const [project, setProject] = useState<TypeProject>({
     screenshots: [''],
     stack: [''],
@@ -30,7 +31,7 @@ const ProjectPage = () => {
   useEffect(() => {
     if (router.isReady) {
       const { id } = router.query
-      const project = projects.filter((i) => i.id === id)[0]
+      const project = projectsData.filter((i) => i.id === id)[0]
       setProject(project)
     }
   }, [router.isReady])

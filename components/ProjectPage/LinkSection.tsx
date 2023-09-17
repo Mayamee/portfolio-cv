@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { FC } from 'react'
-import styles from '../../styles/components/ProjectPage/LinkSection.module.scss'
+import styles from '@/styles/components/ProjectPage/LinkSection.module.scss'
 
 interface LinkSectionProps {
   title: string

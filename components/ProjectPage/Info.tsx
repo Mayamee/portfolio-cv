@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Instruments } from './Instruments'
-import styles from '../../styles/components/ProjectPage/Info.module.scss'
+import styles from '@/styles/components/ProjectPage/Info.module.scss'
 import { motion } from 'framer-motion'
 import { Description } from './Description'
 import { LinkSection } from './LinkSection'

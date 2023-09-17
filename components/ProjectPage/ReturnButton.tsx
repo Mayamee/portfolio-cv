@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FC } from 'react'
-import styles from '../../styles/components/ProjectPage/ReturnButton.module.scss'
+import styles from '@/styles/components/ProjectPage/ReturnButton.module.scss'
 
 interface ReturnButtonProps {
   delay: number

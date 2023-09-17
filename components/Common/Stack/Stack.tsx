@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from 'react'
-import styles from '../../../styles/components/Common/Stack/Stack.module.scss'
+import styles from '@/styles/components/Common/Stack/Stack.module.scss'
 
 interface IStackProps {
   items: string[]

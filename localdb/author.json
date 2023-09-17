@@ -3,7 +3,7 @@
   "surname": "Belykh",
   "jobType": "Frontend developer",
   "city": "Kaluga",
-  "isLookingForAJob": true,
+  "isLookingForAJob": false,
   "skills": [
     "HTML",
     "React",
