@@ -10,14 +10,14 @@ export interface RealWorkItemProps {
   cutImage: boolean
 }
 
-export const RealWorkItem: React.FC<RealWorkItemProps> = ({
+export const RealWorkItem = ({
   companyType,
   label,
   date,
   workTasks,
   image,
   cutImage,
-}) => {
+}: RealWorkItemProps) => {
   return (
     <div className={styles.container}>
       <h3 className={styles.label}>

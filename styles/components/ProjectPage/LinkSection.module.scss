@@ -24,8 +24,6 @@
 
   &:hover {
     @include default-hover;
-    color: $primary-text-color;
-    background-color: $link-button-hover-background;
   }
 
   @include laptop {

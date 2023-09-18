@@ -1,17 +1,28 @@
 import { FC, PropsWithChildren } from 'react'
 import styles from '@/styles/components/Common/Stack/Stack.module.scss'
+import { clsx } from 'clsx'
+import { StackListItem } from 'types/StackListItem'
 
 interface IStackProps {
-  items: string[]
+  items: StackListItem[]
+  isStatic?: boolean
+  onClick?: (content: string) => (e: React.MouseEvent<HTMLLIElement>) => void
 }
 
-const Stack: FC<PropsWithChildren<IStackProps>> = ({ items }) => {
+const Stack: FC<PropsWithChildren<IStackProps>> = ({ items, onClick }) => {
   if (items.length === 0) return null
+
   return (
     <ul className={styles.stack}>
-      {items.map((item, index) => (
-        <li key={index} className={styles.item}>
-          {item}
+      {items.map(({ content, isActive }) => (
+        <li
+          key={content}
+          className={clsx(styles.item, {
+            [styles.activeItem]: isActive,
+          })}
+          onClick={onClick?.(content)}
+        >
+          {content}
         </li>
       ))}
     </ul>

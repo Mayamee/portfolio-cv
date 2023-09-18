@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettify": "prettier --write components/**/*.[tj]s* pages/**/*.[tj]s* styles/**/*.scss"
+    "pretty": "prettier --write components/**/*.[tj]s* pages/**/*.[tj]s* styles/**/*.scss"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
     "framer-motion": "^7.0.0",
+    "mobx": "^6.10.2",
+    "mobx-react-lite": "^4.0.4",
     "next": "12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

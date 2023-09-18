@@ -1,9 +1,20 @@
 import styles from '@/styles/components/Resume/ResumeBody.module.scss'
 import { ConfigService } from '@/services/ConfigService'
-import Stack from '../Common/Stack/Stack'
+import Stack from '../../Common/Stack/Stack'
+import { TechnologyStackStore } from 'stores/TechnologyStackStore'
+import { observer } from 'mobx-react-lite'
 
-export const ResumeBody = () => {
-  const { authorData } = ConfigService.config
+const { authorData } = ConfigService.config
+
+export const ResumeBody = observer(() => {
+  const handleClick = (item: string) => () => {
+    TechnologyStackStore.toggleStackItemActive(item)
+    if (TechnologyStackStore.selectedStack.includes(item)) {
+      TechnologyStackStore.removeSelectedStackItem(item)
+    } else {
+      TechnologyStackStore.addSelectedStackItem(item)
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -27,7 +38,7 @@ export const ResumeBody = () => {
       </div>
       <div className={styles.skills}>
         <h3 className={styles.title}>🎓 Core Skills</h3>
-        <Stack items={authorData.skills} />
+        <Stack items={TechnologyStackStore.stack} onClick={handleClick} />
       </div>
       <div className={styles.about}>
         <h3 className={styles.title}>💁‍♂️ About me</h3>
@@ -39,4 +50,4 @@ export const ResumeBody = () => {
       </div>
     </div>
   )
-}
+})
