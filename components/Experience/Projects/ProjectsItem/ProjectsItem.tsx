@@ -13,7 +13,7 @@ interface ProjectsItemProps {
   stack: string[]
 }
 
-export const ProjectsItem: React.FC<ProjectsItemProps> = ({
+export const ProjectsItem = ({
   width,
   height,
   image,
@@ -21,7 +21,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
   label,
   id,
   stack,
-}) => {
+}: ProjectsItemProps) => {
   const router = useRouter()
 
   const stackItems = stack.map((item) => ({

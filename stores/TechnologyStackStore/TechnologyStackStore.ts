@@ -9,11 +9,11 @@ class TechnologyStackStore {
     makeAutoObservable(this)
   }
 
-  addStackItem(item: string): void {
+  addSelectedStackItem(item: string): void {
     this.selectedStackList.push(item)
   }
 
-  removeStackItem(item: string): void {
+  removeSelectedStackItem(item: string): void {
     this.selectedStackList = this.selectedStackList.filter((stackItem) => stackItem !== item)
   }
 

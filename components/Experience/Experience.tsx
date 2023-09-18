@@ -4,7 +4,7 @@ import styles from '@/styles/components/Experience/Experience.module.scss'
 import { Projects } from './Projects/Projects'
 import { RealWork } from './RealWork/RealWork'
 
-export const Experience: React.FC = () => {
+export const Experience = () => {
   const [isProjects, setIsProjects] = useState(true)
 
   const variants = {

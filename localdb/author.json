@@ -10,16 +10,15 @@
     "Mobx",
     "MUI",
     "Nextjs",
+    "Websocket",
     "Bootstrap",
-    "Javascript (ES6+)",
     "Typescript",
-    "Postman",
-    "Figma",
-    "Webpack/Gulp/Vite",
     "Nodejs",
     "Express",
     "Docker",
-    "MongoDB"
+    "MongoDB",
+    "Javascript (ES6+)",
+    "Webpack/Gulp/Vite"
   ],
   "about": [
     "Hi, I'm Dmitry, a Frontend Engineer.",

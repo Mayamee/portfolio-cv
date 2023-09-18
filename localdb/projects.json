@@ -16,8 +16,9 @@
     ],
     "stack": [
       "React",
-      "Redux/Toolkit",
-      "SocketIO",
+      "Redux",
+      "Websocket",
+      "Express",
       "Bootstrap",
       "i18next",
       "Formik",
@@ -44,7 +45,7 @@
       "/screenshots/quiz-05.png",
       "/screenshots/quiz-06.png"
     ],
-    "stack": ["React", "Redux", "Express", "MaterialUI", "Axios", "MongoDB", "JWT", "Docker"],
+    "stack": ["React", "Redux", "Express", "MUI", "Axios", "MongoDB", "JWT", "Docker"],
     "deployLink": "",
     "responsibility": "Full stack app development",
     "description": "Quiz app - application for creating and taking quizzes",
@@ -62,7 +63,7 @@
       "/screenshots/notes-app-3.png",
       "/screenshots/notes-app-4.png"
     ],
-    "stack": ["React", "TypeScript", "MaterialUI", "Axios", "JsonServer"],
+    "stack": ["React", "Typescript", "MUI"],
     "deployLink": "https://notes.wem.webtm.ru/",
     "responsibility": "Frontend application development",
     "description": "Notes app",

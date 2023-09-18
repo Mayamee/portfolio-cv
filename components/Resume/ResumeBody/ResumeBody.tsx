@@ -10,9 +10,9 @@ export const ResumeBody = observer(() => {
   const handleClick = (item: string) => () => {
     TechnologyStackStore.toggleStackItemActive(item)
     if (TechnologyStackStore.selectedStack.includes(item)) {
-      TechnologyStackStore.removeStackItem(item)
+      TechnologyStackStore.removeSelectedStackItem(item)
     } else {
-      TechnologyStackStore.addStackItem(item)
+      TechnologyStackStore.addSelectedStackItem(item)
     }
   }
 
