@@ -1,5 +1,5 @@
 import styles from '@/styles/components/Resume/Resume.module.scss'
-import { ResumeBody } from './ResumeBody'
+import { ResumeBody } from './ResumeBody/ResumeBody'
 import { ResumeFooter } from './ResumeFooter'
 import { ResumeHeader } from './ResumeHeader'
 

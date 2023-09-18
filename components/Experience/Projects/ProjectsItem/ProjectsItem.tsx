@@ -24,6 +24,11 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
 }) => {
   const router = useRouter()
 
+  const stackItems = stack.map((item) => ({
+    content: item,
+    isActive: false,
+  }))
+
   return (
     <div
       className={styles.container}
@@ -48,7 +53,7 @@ export const ProjectsItem: React.FC<ProjectsItemProps> = ({
       </div>
       <div className={styles.divider} />
       <div className={styles.spacer}>
-        <Stack items={stack} />
+        <Stack items={stackItems} />
       </div>
     </div>
   )

@@ -30,7 +30,7 @@ export const Experience: React.FC = () => {
           Work Expirience
         </h2>
       </nav>
-      <>{isProjects ? <Projects /> : <RealWork />}</>
+      {isProjects ? <Projects /> : <RealWork />}
     </motion.section>
   )
 }
