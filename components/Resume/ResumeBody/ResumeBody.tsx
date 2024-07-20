@@ -3,6 +3,7 @@ import { ConfigService } from '@/services/ConfigService'
 import Stack from '../../Common/Stack/Stack'
 import { TechnologyStackStore } from 'stores/TechnologyStackStore'
 import { observer } from 'mobx-react-lite'
+import Link from 'next/link'
 
 const { authorData, links } = ConfigService.config
 
@@ -27,14 +28,9 @@ export const ResumeBody = observer(() => {
         >
           Download CV
         </a>
-        <a
-          className={styles.works}
-          href="/project/flappy-chat"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Recent Project
-        </a>
+        <Link href="/project/flappy-chat">
+          <a className={styles.works}>Recent Project</a>
+        </Link>
       </div>
       <div className={styles.skills}>
         <h3 className={styles.title}>🎓 Core Skills</h3>
