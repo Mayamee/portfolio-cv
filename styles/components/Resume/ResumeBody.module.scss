@@ -28,7 +28,8 @@
   align-items: center;
   justify-content: center;
   height: 40px;
-  width: 110px;
+	padding: 0 15px;
+	min-width: 100px;
   @include paragraph;
   border-radius: 5px;
   border: 1px solid black;

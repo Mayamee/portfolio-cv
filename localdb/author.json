@@ -1,38 +1,42 @@
 {
   "name": "Dmitry Belykh",
   "surname": "Belykh",
-  "jobType": "Frontend developer",
+  "jobType": "Frontend Developer",
   "city": "Russia, Kaluga",
   "isLookingForAJob": false,
   "skills": [
     "React",
-    "Redux",
     "Mobx",
+    "Redux",
+    "RTK",
     "MUI",
-    "Nextjs",
+    "Apollo GraphQL",
+    "Styled Components",
+    "Emotion",
+    "NextJS",
     "Websocket",
-    "Bootstrap",
     "Typescript",
     "Nodejs",
-    "Express",
     "Docker",
-    "MongoDB",
-    "Javascript (ES6+)",
+    "TS/JS",
+    "Vitest",
+    "TailwindCSS",
+    "SASS/SCSS",
     "Webpack/Gulp/Vite"
   ],
   "about": [
-    "Hi, I'm Dmitry, a Frontend Engineer.",
-    "Currently I'm working in a large product company Astal Soft, on an electronic reporting product.",
-    "I work with Nextjs, Mobx, Styled Components.",
-    "I love the Frontend direction, I am actively developing and pumping my skills."
+    "Frontend Engineer (React)",
+    "Currently I'm working on eDMS system",
+    "Stack:",
+    "NextJS, Mobx, MUI/Emotion/Styled Components (UI-KIT), Vitest, Docker"
   ],
   "contacts": {
     "email": {
-      "value": "ponyashcat228@gmail.com",
+      "value": "dev.ymmwmm@gmail.com",
       "img": "/icons/email.svg"
     },
     "phone": {
-      "value": "79533248256",
+      "value": "79932316385",
       "img": "/icons/phone.svg"
     },
     "links": [

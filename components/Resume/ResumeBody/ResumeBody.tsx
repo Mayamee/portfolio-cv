@@ -4,7 +4,7 @@ import Stack from '../../Common/Stack/Stack'
 import { TechnologyStackStore } from 'stores/TechnologyStackStore'
 import { observer } from 'mobx-react-lite'
 
-const { authorData } = ConfigService.config
+const { authorData, links } = ConfigService.config
 
 export const ResumeBody = observer(() => {
   const handleClick = (item: string) => () => {
@@ -21,19 +21,19 @@ export const ResumeBody = observer(() => {
       <div className={styles.buttons}>
         <a
           className={styles.hire}
-          href="https://rxresu.me/ponyashcat228/cv-frontend-eng"
+          href={links['cv-download-link']}
           target="_blank"
           rel="noreferrer"
         >
-          CV
+          Download CV
         </a>
         <a
           className={styles.works}
-          href="https://portfolio-cv-eight.vercel.app/project/flappy-chat"
+          href="/project/flappy-chat"
           target="_blank"
           rel="noreferrer"
         >
-          Recent Work
+          Recent Project
         </a>
       </div>
       <div className={styles.skills}>

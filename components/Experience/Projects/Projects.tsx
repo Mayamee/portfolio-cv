@@ -20,7 +20,7 @@ export const Projects = observer(function Projects() {
       initial="hidden"
       animate="enter"
       exit="exit"
-      transition={{ type: 'linear' }}
+      transition={{ ease: 'linear' }}
       className={styles.projects}
     >
       {projectsData.map((item) => {

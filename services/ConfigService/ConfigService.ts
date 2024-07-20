@@ -1,15 +1,13 @@
 import authorData from '@/localdb/author.json'
 import projectsData from '@/localdb/projects.json'
 import workExpririenceData from '@/localdb/workExpirience.json'
-
-type AuthorData = typeof authorData
-type ProjectsData = typeof projectsData
-type WorkExpririenceData = typeof workExpririenceData
+import links from '@/localdb/links.json'
 
 type Config = {
-  authorData: AuthorData
-  projectsData: ProjectsData
-  workExpririenceData: WorkExpririenceData
+  authorData: typeof authorData
+  projectsData: typeof projectsData
+  workExpririenceData: typeof workExpririenceData
+  links: typeof links
 }
 
 class ConfigService {
@@ -23,6 +21,7 @@ class ConfigService {
         authorData,
         projectsData,
         workExpririenceData,
+        links,
       }
 
       return this._config

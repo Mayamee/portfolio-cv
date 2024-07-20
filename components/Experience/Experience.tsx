@@ -19,7 +19,7 @@ export const Experience = () => {
       initial="hidden"
       animate="enter"
       exit="exit"
-      transition={{ type: 'linear' }}
+      transition={{ ease: 'linear' }}
       className={styles.container}
     >
       <nav className={styles.nav}>

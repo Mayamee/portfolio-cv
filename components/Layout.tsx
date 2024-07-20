@@ -23,7 +23,7 @@ export const Layout: FC<any> = ({ children, key }) => {
         initial="hidden"
         animate="enter"
         exit="exit"
-        transition={{ type: 'linear' }}
+        transition={{ ease: 'linear' }}
         className={styles.container}
       >
         {children}
